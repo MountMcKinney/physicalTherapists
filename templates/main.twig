@@ -1,0 +1,74 @@
+<!doctype html>
+{% block html %}<html lang="en">{% endblock html %}
+  <head>
+      <link rel="shortcut icon" href="{{ baseUrl }}img/favicon.ico">
+      <title>NeuroFit</title>
+<link href='http://fonts.googleapis.com/css?family=Lora|Alice' rel='stylesheet' type='text/css'>      <link rel="stylesheet" href="{{ baseUrl }}css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% block head %}
+      {% endblock head %}
+  </head>
+  <body>
+    <header>
+        <div id="name">
+          <h1>NeuroFit</h1>
+          <h4>Adaptive (something) Fitness</h4>
+        </div>
+        <div class="mobile-nav nav">
+          <div class="menu-btn" id="menu-btn">
+             <div></div>
+             <span></span>
+             <span></span>
+             <span></span>
+          </div>
+          <div class="responsive-menu">
+              <ul>
+              <a href="{{siteUrl('/home')}}"><li>Home</li></a>
+              <a href="{{siteUrl('/ultreya')}}"><li>Ultreya</li></a>
+              <a href="{{siteUrl('/school-of-leaders')}}"><li>School Of Leaders</li></a>
+              <a href="{{siteUrl('/pre-cursillo')}}"><li>Pre-Cursillo</li></a>
+              <a href="{{siteUrl('/three-day')}}"><li>Three Day</li></a>
+              <a href="{{siteUrl('/fourth-day')}}"><li>Fourth Day</li></a>
+              <a href="{{siteUrl('/about-us')}}"><li>About-Us</li></a>
+              </ul>
+          </div>
+        </div>
+        <div id="menu" class="nav">
+          <ul>
+            <a href="{{ siteUrl('/home')}}"><li>Home</li></a>
+              <li class="show-more-nav event-nav">Events
+                <ul>
+                  <a href="{{ siteUrl('/pre-cursillo')}}"><li>Pre-Cursillo</li></a>
+                  <a href="{{ siteUrl('/three-day')}}"><li>Three Day</li></a>
+                  <a href="{{ siteUrl('/fourth-day')}}"><li>Fourth Day</li></a>
+                </ul>
+              </li>
+              <a href="{{ siteUrl('/ultreya')}}"><li>Ultreya</li></a>
+              <a href="{{ siteUrl('/contact')}}"><li>School Of Leaders</li></a>
+              <a href="{{ siteUrl('/about')}}"><li>About Us</li></a>
+          </ul>
+        </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        {% block content %}
+          <div class="home-content">
+
+          </div>
+          <div class="home-content">
+
+          </div>
+        {% endblock content %}
+      </div>
+    </main>
+    {% block footer %}
+    <footer>
+
+    </footer>
+    {% endblock footer %}
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ baseUrl }}js/app.js"></script>
+    {% block script %}
+    {% endblock script %}
+  </body>
+</html>
