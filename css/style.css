@@ -1,7 +1,7 @@
 /*----Universal----*/
 *{
   margin: 0;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -9,50 +9,50 @@ body {
 
 /*----Header----*/
 header{
-  background: rgba(124, 255, 166, 0.52);
-  margin-bottom: 1rem;
-  border-bottom: 20px solid slategrey;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  margin-bottom: 3px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+  padding: 10px 0;
 }
 
-#name {
+.logo {
   text-align: right;
   margin-right: 2%;
+  color: #263238;
+  float: right;
 }
 
-#name span img {
-  height: 100px;
-  width: 100px;
+.logo h4 {
+  text-transform: uppercase;
+}
+
+.logoColor {
+  color: rgba(253, 216, 53, 0.8);
+}
+
+.logo h1, .logo h4, .logo span, .nav li, #developer {
+    font-family: 'Fugaz One', serif;
 }
 
 /*----Menu----*/
-.nav {
+/*.nav {
   float: left;
 }
 
-.mobile-nav ul {
+.mobileNav ul {
   list-style: none;
   background: slategrey;
   margin-left: -2rem;
-}
+}*/
 
-a:link, a:visited, a:hover {
-  color: black;
+a:link, a:visited {
+  color: #546E7A;
   text-decoration: none;
 }
-
-@media (min-width:800px) {
-
-  a:link, a:visited {
-    color: slategrey;
-  }
-  a:hover {
-    color: black;
-  }
+a:hover, .logo a:link, .logo a:visited {
+  color: #263238;
 }
 
-.menu-btn div {
+.menuBtn div {
 	position: relative;
 	left: 100%;
 	top: 64%;
@@ -64,16 +64,16 @@ a:link, a:visited, a:hover {
 	z-index: 99;
 }
 
-.menu-btn span {
+.menuBtn span {
 	display: block;
 	width: 32px;
 	height: 3px;
 	margin: 6px 13px;
-	background: slategrey;
+	background: #263238;
 	z-index: 99;
 }
 
-.responsive-menu{
+.responsiveMenu{
 	display: none;
 }
 
@@ -85,29 +85,9 @@ a:link, a:visited, a:hover {
   display: none;
 }
 
-.expand {
-	display: inline-block;
-  width:210px;
-}
-
-.expand li {
-  margin: 8px 15px;
-  padding: 15px 0 10px;
-  text-align:left;
-  position:relative;
-  z-index:99;
-  text-transform: uppercase;
-}
-
-.expand a:link, .expand a:visited {
-  color: rgba(124, 255, 166, 0.52);
-}
-
-
 @media (min-width: 800px) {
   #menu {
     display: inline;
-    margin: -6.5rem -2.3rem 0px;
   }
 
   #menu li {
@@ -118,171 +98,167 @@ a:link, a:visited, a:hover {
     margin-left: 5px;
   }
 
-  .show-more-nav {
-    color: slategrey;
-  }
-
-  .show-more-nav:hover {
-    color: black;
-  }
-
-  .show-more-nav:hover ul {
-  display: block;
-  visibility: visible;
-  }
-
-  .show-more-nav ul {
-    visibility: hidden;
-    position: absolute;
-  }
-
-  .contact-nav ul {
-    margin-left: -12.1rem;
-  }
-
-  .event-nav ul{
-    margin-left: -8.35rem;
-  }
-
-  .responsive-menu, .mobile-nav, #menu-btn {
+  .responsiveMenu, .mobileNav, #menuBtn {
     display: none;
   }
 }
 
 /*----Footer----*/
 
+.social img {
+  height:35px;
+  width:35px;
+}
+
 footer {
-  background:rgba(124, 255, 166, 0.52);
-  clear: both;
-  margin-top: 7rem;
+  clear:both;
+  text-align:center;
+  width:100%;
+  height:100%;
+  color:#263238;
+  padding-bottom: 40px;
 }
 
-footer a {
-  display: block;
-  text-align: center;
-  padding-top: 0.8rem;
-  margin-top: 1rem;
-}
-
-footer div ul {
-  list-style: none;
+#developer:hover {
+  color: rgba(253, 216, 53, 0.8);
 }
 
 @media (min-width:800px) {
   footer a {
-    margin: 1rem 12rem;
+
   }
 }
-
-/*.social{
-  width: 40px;
-}*/
 
 .social img {
   width: 40px;
   height: 40px;
 }
 
-#mount_logo {
-  color: black;
-  clear: both;
-  margin-top: 1.5rem;
-  padding-bottom: 2rem;
-  margin-bottom: -2rem;
-}
-
-@media (min-width:800px) {
-  #mount_logo {
-    color: black;
-  }
-}
-
 /*----Content----*/
-main {
-  clear: both;
-  line-height: 1.8;
+
+.jumbotron {
+  margin-bottom: 20px;
+  height: 600px;
+  background: #f6f6f6 url('../img/pt.jpg') center no-repeat;
+  background-size: cover;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+}
+
+.jumboHeader {
+  text-transform: uppercase;
+  text-align: center;
+  color: #263238;
+}
+
+h1.jumboHeader{
+  text-shadow: 2px 1px white;
+  font-size: 3rem;
+  background: rgba(253, 216, 53, 0.8);
+  padding-bottom: 25px;
+}
+
+p.jumboHeader {
+  font-size: 2rem;
+  text-shadow: 1px 1px white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14%;
+  background: rgba(253, 216, 53, 0.8);
+  padding-top: 25px;
 }
 
 .wrapper {
   max-width: 1200px;
-  margin:auto;
+  margin: auto;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
   text-align: center;
 }
 
-@media (min-width:800px) {
-  main{
-
-  }
-}
-
-/*----Home----*/
-
-.home-title {
-  border-bottom: 2px solid rgba(124, 255, 166, 0.52);
-  font-family: 'Alice',serif;
-  text-transform: uppercase;
-  margin-top: 3rem;
-  font-size: 2rem;
-}
-
-@media (min-width:800px) {
-  .home-title {
-    font-size: 2.8rem;
-  }
-}
-
-.home-content {
-  margin-top: 3rem;
-}
-
-.sub-heading {
-  font-size: 1.8rem;
-  margin: 5rem 0 1rem;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
-/*----Ultreya----*/
-
-.page-title {
-  border-bottom: 1px solid rgba(124, 255, 166, 0.52);
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-family: 'Alice',serif;
-  margin-bottom: 3rem;
-}
-
-@media (min-width:800px) {
-  .page-title {
-    font-size: 2.8rem;
-  }
-}
-
-.map-dir {
-  margin: 40px 0 20px;
-}
-
-#map-canvas{
-  height:400px;
-  width:90%;
-  margin:auto;
-  border-radius: 15px;
-}
-
-#map-canvas a:link, #map-canvas a:visited, #map-canvas a:hover {
-  color: black;
-}
-
-@media (min-width:1200px) {
-  #map-canvas {
-    height: 600px;
-  }
-}
-
-.construction {
+.homeContent li {
   list-style: none;
+  display: inline-block;
+  max-width: 300px;
+  border: 1px solid rgba(0,0,0,0.4);
+  margin: 5rem 2rem;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.callout h2, .content h1 {
+  color: #263238;
+  background: rgba(253, 216, 53, 0.8);
+}
+
+.callout p, .contactDetails li {
+  font-family: 'Lora', serif;
+}
+
+.callout p, .content p {
+    padding: 0 15px;
+}
+
+/*----Contact Page----*/
+
+.jumbotronContact {
+  margin-bottom: 20px;
+  height: 400px;
+  background: #f6f6f6 url('../img/pt-clinic.jpg') center no-repeat;
+  background-size: cover;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+}
+.pageContent {
+  width: 80%;
+  margin: auto;
+}
+
+.content {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  border: 1px solid rgba(0,0,0,0.4);
+  margin: 5rem 2rem;
+  text-align: center;
+}
+
+ul.contactDetails {
+  padding-right: 40px;
+}
+
+.content li {
+  list-style: none;
+}
+
+.hours, .contactLink {
+  font-size: 1.25rem;
+  margin: 20px 0;
+}
+
+.contactMap {
+  clear: both;
+  width: 100%
+}
+
+/*----About Page----*/
+
+.bio {
+  text-align: center;
+}
+
+li.bio {
+  padding-bottom: 30px;
+}
+
+.bio img {
+  width: 300px;
+  border-radius: 50%;
+  padding: 40px 10px;
+}
+
+ul.bioDetails {
+  margin-bottom: 100px;
+  padding-right: 40px;
+}
+
+.bio h5 {
+    font-size: 2rem;
+    margin: -20px 0 20px;
 }

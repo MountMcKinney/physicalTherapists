@@ -26,10 +26,6 @@
         $app->render('home.twig');
       })->name('home');
 
-      $app->get('/schedule', function() use($app){
-        $app->render('schedule.twig');
-      })->name('schedule');
-
       $app->get('/contact', function() use($app){
         $app->render('contact.twig');
       })->name('contact');
