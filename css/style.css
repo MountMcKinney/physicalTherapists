@@ -56,7 +56,6 @@ a:hover, .logo a:link, .logo a:visited {
 	position: relative;
 	left: 100%;
 	top: 64%;
-	margin-top: -6rem;
 	line-height: 1.2;
 	font-size: 18px;
 	font-weight: 200;
@@ -85,7 +84,11 @@ a:hover, .logo a:link, .logo a:visited {
   display: none;
 }
 
-@media (min-width: 800px) {
+.nav ul {
+  padding-left: 0;
+}
+
+@media (min-width: 840px) {
   #menu {
     display: inline;
   }
@@ -123,12 +126,6 @@ footer {
   color: rgba(253, 216, 53, 0.8);
 }
 
-@media (min-width:800px) {
-  footer a {
-
-  }
-}
-
 .social img {
   width: 40px;
   height: 40px;
@@ -151,21 +148,44 @@ footer {
 }
 
 h1.jumboHeader{
-  text-shadow: 2px 1px white;
+  text-shadow: 1px 1px white;
   font-size: 3rem;
-  background: rgba(253, 216, 53, 0.8);
+  background: rgba(38, 50, 56,0.5);
+  /*background: rgba(253, 216, 53, 0.8);*/
   padding-bottom: 25px;
+  color: rgba(253, 216, 53, 0.8);
 }
 
 p.jumboHeader {
   font-size: 2rem;
-  text-shadow: 1px 1px white;
+  text-shadow: 0px 1px white;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 14%;
-  background: rgba(253, 216, 53, 0.8);
+  background: rgba(38, 50, 56, 0.8);
+  /*background: rgba(253, 216, 53, 0.8);*/
   padding-top: 25px;
+  color: rgba(253, 216, 53, 0.8);
+}
+
+p.minitronHeader {
+  font-size: 1.2rem;
+  background: rgba(38, 50, 56, 0.5);
+  /* background: rgba(253, 216, 53, 0.8); */
+  padding: 2% 55px;
+  color: white;
+  text-shadow: 0px 2px 3px #263238;
+}
+
+p.minitronHeader:first-of-type {
+  padding-top: 10%;
+}
+
+.minitron {
+  background: #f6f6f6 url('../img/minitron.jpg') top no-repeat;
+  background-size: cover;
+  height: 800px;
 }
 
 .wrapper {
@@ -185,9 +205,24 @@ p.jumboHeader {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 
+.mainContent li {
+  list-style: none;
+  display: inline-block;
+  max-width: 450px;
+  border: 1px solid rgba(0,0,0,0.4);
+  margin: 5rem 2rem;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
 .callout h2, .content h1 {
   color: #263238;
   background: rgba(253, 216, 53, 0.8);
+  font-size: 2rem;
+}
+
+.mainContent h2 {
+  color: rgba(253, 216, 53, 0.8);
+  background: rgba(38, 50, 56,0.75);
 }
 
 .callout p, .contactDetails li {
@@ -195,11 +230,11 @@ p.jumboHeader {
 }
 
 .callout p, .content p {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
-ul.homeContent {
-    padding-right: 40px;
+ul.homeContent, ul.mainContent {
+  padding-right: 40px;
 }
 
 .homeMain {
@@ -244,6 +279,21 @@ ul.contactDetails {
 .contactMap {
   clear: both;
   width: 100%
+}
+
+.cognito form {
+  text-align: left;
+  margin: 0 60px;
+}
+
+.c-label label {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+#c-submit-button:hover {
+  background: rgba(253, 216, 53, 0.8);
+  color: #263238;
 }
 
 /*----About Page----*/
@@ -301,6 +351,10 @@ ul.bioDetails, ul.formDetails {
 .jumbotronResources {
   margin-bottom: 40px;
   box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
+}
+
+.jumbotronResources h1 {
+  background: rgba(38, 50, 56, 0.8);
 }
 
 .form img {
