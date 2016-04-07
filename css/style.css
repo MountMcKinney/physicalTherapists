@@ -198,6 +198,14 @@ p.jumboHeader {
     padding: 0 15px;
 }
 
+ul.homeContent {
+    padding-right: 40px;
+}
+
+.homeMain {
+  /*margin: 100px 0 150px;*/
+}
+
 /*----Contact Page----*/
 
 .jumbotronContact {
@@ -248,18 +256,18 @@ ul.contactDetails {
   box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
 }
 
-.about h1, .services h1 {
+.about h1, .services h1, .homeMain h1 {
   font-size: 6rem;
   margin: 40px 0 30px;
 }
 
-.about h3, .services h3 {
+.about h3, .services h3, .homeMain h3 {
   text-align: left;
   margin: 50px 0 10px;
   font-size: 1.7rem;
 }
 
-.about p {
+.about p, .homeMain p {
   text-align: left;
   line-height: 1.4;
 }
@@ -331,5 +339,10 @@ ul.bioDetails, ul.formDetails {
   border-bottom: 3px solid #263238;
   width: 180px;
   background: rgba(253, 216, 53, 0.8);
-  padding: 5px 10px;
+  padding: 5px 50px;
+}
+
+.serviceList {
+  float: left;
+  margin: 0 5% 150px;
 }
