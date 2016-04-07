@@ -84,6 +84,24 @@ a:hover, .logo a:link, .logo a:visited {
   display: none;
 }
 
+.expand {
+	display: inline-block;
+  width:210px;
+}
+
+.expand li {
+  margin: 8px 15px;
+  padding: 15px 0 10px;
+  text-align:left;
+  position:relative;
+  z-index:99;
+  text-transform: uppercase;
+}
+
+.expand a:link, .expand a:visited {
+  color: rgba(124, 255, 166, 0.52);
+}
+
 .nav ul {
   padding-left: 0;
 }
