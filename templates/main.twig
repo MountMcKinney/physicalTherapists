@@ -13,30 +13,33 @@
       {% endblock head %}
   </head>
   <body>
+    <!-- <div id="right"> -->
     <header>
         <div class="logo">
           <a href="{{siteUrl('/home')}}"><h1>Neuro<span class="logoColor">Fit</span></h1>
           <h4>Adaptive Fitness Studio</h4></a>
         </div>
-        <div class="mobileNav nav">
-          <div class="menuBtn" id="menuBtn">
-             <div></div>
-             <span></span>
-             <span></span>
-             <span></span>
-          </div>
-          <div class="responsiveMenu">
-              <ul>
-                <a href="{{siteUrl('/home')}}"><li>Home</li></a>
-                <a id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/shortBookingPage/cbd39e8e-6549-48ff-9675-c0bdf4d081c7"><li>Schedule</li></a>
-                <a href="{{siteUrl('/services')}}"><li>Services</li></a>
-                <a href="{{siteUrl('/resources')}}"><li>Resources</li></a>
-                <a href="{{siteUrl('/contact')}}"><li>Contact</li></a>
-                <a href="{{siteUrl('/about')}}"><li>About</li></a>
-              </ul>
-          </div>
+        <div id="menubar">
+            <div id="button">
+              <div class="menuBtn">
+                 <div></div>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+              </div>
+            </div>
         </div>
-        <div id="menu" class="nav">
+          <!-- <div id="menu">
+              <ul>
+                  <li><a href="#">Menu Item 1</a></li>
+                  <li><a href="#">Menu Item 2</a></li>
+                  <li><a href="#">Menu Item 3</a></li>
+                  <li><a href="#">Menu Item 4</a></li>
+                  <li><a href="#">Menu Item 5</a></li>
+              </ul>
+          </div> -->
+
+        <div class="desktopMenu">
           <ul>
             <a href="{{siteUrl('/home')}}"><li>Home</li></a>
             <a id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/shortBookingPage/cbd39e8e-6549-48ff-9675-c0bdf4d081c7"><li>Schedule</li></a>
@@ -63,5 +66,6 @@
         <a href="http://instagram.com/mountmckinney" class="social" id="instagramIcon"><img src="{{ baseUrl }}img/instagram-icon.svg"></a>
       </footer>
     {% endblock footer %}
+  <!-- </div> -->
   </body>
 </html>

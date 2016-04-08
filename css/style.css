@@ -1,4 +1,5 @@
 /*----Universal----*/
+
 *{
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
@@ -8,6 +9,7 @@ body {
 }
 
 /*----Header----*/
+
 header{
   margin-bottom: 3px;
   box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
@@ -29,20 +31,11 @@ header{
   color: rgba(253, 216, 53, 0.8);
 }
 
-.logo h1, .logo h4, .logo span, .nav li, #developer {
+.logo h1, .logo h4, .logo span, .desktopMenu li, #developer {
     font-family: 'Fugaz One', serif;
 }
 
 /*----Menu----*/
-/*.nav {
-  float: left;
-}
-
-.mobileNav ul {
-  list-style: none;
-  background: slategrey;
-  margin-left: -2rem;
-}*/
 
 a:link, a:visited {
   color: #546E7A;
@@ -52,76 +45,24 @@ a:hover, .logo a:link, .logo a:visited {
   color: #263238;
 }
 
-.menuBtn div {
-	position: relative;
-	left: 100%;
-	top: 64%;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
-	z-index: 99;
+.desktopMenu {
+  display: inline;
 }
 
-.menuBtn span {
-	display: block;
-	width: 32px;
-	height: 3px;
-	margin: 6px 13px;
-	background: #263238;
-	z-index: 99;
-}
-
-.responsiveMenu{
-	display: none;
-}
-
-#menu {
-  display: none;
-}
-
-.hidden{
-  display: none;
-}
-
-.expand {
-	display: inline-block;
-  width:210px;
-}
-
-.expand li {
-  margin: 8px 15px;
-  padding: 15px 0 10px;
-  text-align:left;
-  position:relative;
-  z-index:99;
+.desktopMenu li {
   text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+  padding: 20px 10px;
+  margin-left: 5px;
 }
 
-.expand a:link, .expand a:visited {
-  color: rgba(124, 255, 166, 0.52);
+#menuBtn {
+  display: none;
 }
 
-.nav ul {
+.desktopMenu ul {
   padding-left: 0;
-}
-
-@media (min-width: 840px) {
-  #menu {
-    display: inline;
-  }
-
-  #menu li {
-    text-transform: uppercase;
-    list-style: none;
-    display: inline-block;
-    padding: 20px 10px;
-    margin-left: 5px;
-  }
-
-  .responsiveMenu, .mobileNav, #menuBtn {
-    display: none;
-  }
 }
 
 /*----Footer----*/
@@ -418,3 +359,128 @@ ul.bioDetails, ul.formDetails {
   float: left;
   margin: 0 5% 150px;
 }
+
+@media screen and (max-width: 840px) {
+  header {
+    padding: 10px 0 70px;
+  }
+
+  h1.jumboHeader {
+    font-size: 1.6rem;
+  }
+  p.jumboHeader {
+    bottom: 12%;
+    font-size: 1.3rem;
+  }
+
+  .menuBtn div {
+  	position: relative;
+  	left: 100%;
+  	top: 64%;
+  	line-height: 1.2;
+  	font-size: 18px;
+  	font-weight: 200;
+  	vertical-align: middle;
+  	z-index: 99;
+  }
+
+  .menuBtn span {
+  	display: block;
+  	width: 32px;
+  	height: 3px;
+  	margin: 6px 13px;
+  	background: #263238;
+  	z-index: 99;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  #menubar {
+    width:100%;
+    background-color:white;
+    padding: 10px;
+  }
+
+  #button {
+    cursor:pointer;
+    float: left;
+  }
+
+  #menu, #right {
+    display:inline;
+  }
+
+  #menu li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  #right {
+    width:100%;
+    background-color: #fff;
+    z-index: 9999;
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    -webkit-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+        moz-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+          o-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+            box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  #right p {
+    padding: 10px;
+  }
+
+  #menu {
+    float:left;
+    width: 350px;
+    height: 100%;
+  }
+
+  #menu li {
+    background-color:red;
+    border-bottom: 1px solid #888;
+  }
+
+  .about h1, .services h1, .homeMain h1 {
+    font-size: 3rem;
+  }
+
+  .homeMain h3, .homeMain p {
+    text-align: center;
+  }
+
+  .mainContent li {
+    margin: 5rem 0;
+  }
+
+  p.minitronHeader {
+    font-size: 1.1rem;
+    padding: 5% 25px;
+    color: rgba(253, 216, 53, 0.8);
+  }
+
+  .homeContent li {
+    margin: 3.5rem 0;
+    max-width: 600px;
+  }
+
+  .serviceList {
+    display: inline-block;
+    max-width: 450px;
+    border: 1px solid rgba(0,0,0,0.4);
+    margin: 5rem 2rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  }
+}
+
+/*@media screen (min-width: 720px) and (max-width: 839px){
+  .homeContent li {
+    margin: 3.5rem 1rem;
+  }
+}*/
