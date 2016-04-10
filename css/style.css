@@ -173,7 +173,7 @@ p.minitronHeader:first-of-type {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 
-.callout h2, .content h1 {
+.callout h2, .content h1, .contactMap h1 {
   color: #263238;
   background: rgba(253, 216, 53, 0.8);
   font-size: 2rem;
@@ -223,7 +223,7 @@ ul.homeContent, ul.mainContent {
 }
 
 ul.contactDetails {
-  padding-right: 40px;
+  padding-left: 0;
 }
 
 .content li {
@@ -237,7 +237,11 @@ ul.contactDetails {
 
 .contactMap {
   clear: both;
-  width: 100%
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  border: 1px solid rgba(0,0,0,0.4);
+  text-align: center;
+  margin: auto auto 100px;
 }
 
 .cognito form {
@@ -270,7 +274,7 @@ ul.contactDetails {
   margin: 40px 0 30px;
 }
 
-.about h3, .services h3, .homeMain h3 {
+.about h3, .homeMain h3 {
   text-align: left;
   margin: 50px 0 10px;
   font-size: 1.7rem;
@@ -297,7 +301,7 @@ li.bio, li.form {
 
 ul.bioDetails, ul.formDetails {
   margin-bottom: 100px;
-  padding-right: 40px;
+  padding-left: 0;
 }
 
 .bio h5 {
@@ -343,21 +347,25 @@ ul.bioDetails, ul.formDetails {
 }
 
 .services li {
-  text-align: left;
-  list-style-type: circle;
   line-height: 2;
+  font-size: 1.25rem;
+  list-style: none;
 }
 
 .services h3 {
   border-bottom: 3px solid #263238;
-  width: 180px;
   background: rgba(253, 216, 53, 0.8);
   padding: 5px 50px;
+  font-size: 2rem;
 }
 
-.serviceList {
-  float: left;
-  margin: 0 5% 150px;
+.servicesContent {
+  margin: 5rem 2rem;
+  text-align: center;
+}
+
+.servicesContent ul {
+  padding-left: 0;
 }
 
 @media screen and (max-width: 840px) {
@@ -368,8 +376,9 @@ ul.bioDetails, ul.formDetails {
   h1.jumboHeader {
     font-size: 1.6rem;
   }
+
   p.jumboHeader {
-    bottom: 12%;
+    bottom: 49.5%;
     font-size: 1.3rem;
   }
 
@@ -470,17 +479,47 @@ ul.bioDetails, ul.formDetails {
     max-width: 600px;
   }
 
-  .serviceList {
-    display: inline-block;
-    max-width: 450px;
-    border: 1px solid rgba(0,0,0,0.4);
-    margin: 5rem 2rem;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  .services h3 {
+    border-bottom: 3px solid #263238;
+    background: rgba(253, 216, 53, 0.8);
+    padding: 5px 30px;
+    font-size: 1.7rem;
+  }
+
+  .services li {
+    font-size: 1rem;
+  }
+
+  .bio img {
+    width: 200px;
+  }
+
+  .jumbotronContact {
+    height: 200px;
+  }
+
+  .jumbotronAbout, .jumbotron:first-of-type {
+    height: 300px;
+  }
+
+  .contactLink {
+    font-size: 1rem;
+  }
+
+  .cognito form {
+    text-align: left;
+    margin: 0 10px;
+  }
+
+  .content, .servicesContent {
+    margin: 5rem 0rem;
+  }
+
+  .about h3 {
+    text-align: center;
+  }
+
+  .about p, .homeMain p {
+    text-align: justify;
   }
 }
-
-/*@media screen (min-width: 720px) and (max-width: 839px){
-  .homeContent li {
-    margin: 3.5rem 1rem;
-  }
-}*/
