@@ -57,7 +57,7 @@ a:hover, .logo a:link, .logo a:visited {
   margin-left: 5px;
 }
 
-#menuBtn {
+#menuBtn, #menu {
   display: none;
 }
 
@@ -394,49 +394,83 @@ ul.bioDetails, ul.formDetails {
     padding: 10px;
   }
 
-  #button {
+  .menuBtn {
     cursor:pointer;
     float: left;
   }
 
-  #menu, #right {
-    display:inline;
-  }
+  .mobileMenu {
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #263238;
+	z-index: 100;
+}
 
-  #menu li a {
-    padding: 10px;
-    display: block;
-    color: white;
-    text-decoration: none;
-  }
+.mobileMenu h3 {
+  position: relative;
+  padding: 15px 10px;
+  color: #fff;
+  font-size: 1.8em;
+  border-bottom: 5px solid rgba(253, 216, 53, 0.8);
+}
 
-  #right {
-    width:100%;
-    background-color: #fff;
-    z-index: 9999;
-    position: fixed;
-    left: 0px;
-    height: 100%;
-    -webkit-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
-        moz-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
-          o-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
-            box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
-  }
+.mobileMenu a:link, .mobileMenu a:hover, .mobileMenu a:visited {
+  color: rgba(253, 216, 53, 0.8);
+}
 
-  #right p {
-    padding: 10px;
-  }
+.mobileMenu .mobileMenuToggle {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	display: inline-block;
+	padding: 6px 9px 5px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	background: #222;
+	color: #999;
+	text-decoration: none;
+	vertical-align: top;
+}
 
-  #menu {
-    float:left;
-    width: 350px;
-    height: 100%;
-  }
+.mobileMenu ul {
+	list-style: none;
+  padding-left: 0;
+	border-top: 1px solid #151515;
+	border-bottom: 1px solid #454545;
+}
 
-  #menu li {
-    background-color:red;
-    border-bottom: 1px solid #888;
-  }
+.mobileMenu ul li {
+	border-top: 1px solid #454545;
+	border-bottom: 1px solid #151515;
+  padding: 13px;
+  font-size: 1.2rem;
+}
+
+.mobileMenu ul li:hover {
+  background: rgba(253, 216, 53, 0.8);
+}
+
+.mobileMenu a:hover {
+  color: #263238;
+}
+
+.mobileMenu ul li a {
+	position: relative;
+	display: block;
+	color: #999;
+	text-decoration: none;
+}
+
+/*.mobileMenu ul li a i {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	opacity: .5;
+}*/
 
   .about h1, .services h1, .homeMain h1 {
     font-size: 3rem;
