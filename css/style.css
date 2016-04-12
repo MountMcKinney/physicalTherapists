@@ -151,6 +151,13 @@ p.minitronHeader:first-of-type {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 
+.callout img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 20px 10px;
+}
+
 .mainContent li {
   list-style: none;
   display: inline-block;
@@ -191,7 +198,7 @@ ul.homeContent, ul.mainContent {
 
 .jumbotronContact {
   margin-bottom: 20px;
-  height: 400px;
+  height: 650px;
   background: #f6f6f6 url('../img/pt-clinic.jpg') center no-repeat;
   background-size: cover;
   box-shadow: 0px 2px 8px rgba(0,0,0,0.8);
@@ -282,6 +289,7 @@ li.bio, li.form {
 
 .bio img {
   width: 300px;
+  height: 300px;
   border-radius: 50%;
   padding: 40px 10px;
 }
@@ -293,7 +301,12 @@ ul.bioDetails, ul.formDetails {
 
 .bio h5 {
   font-size: 2rem;
-  margin: -20px 0 20px;
+  margin: -20px 0 0;
+}
+
+.bio h6 {
+  margin-bottom: 20px;
+  font-size: 1.25rem;
 }
 
 /*----Resources Page----*/
@@ -496,6 +509,11 @@ ul.bioDetails, ul.formDetails {
     max-width: 600px;
   }
 
+  .callout img {
+    width: 150px;
+    height: 150px;
+  }
+
   .services h3 {
     border-bottom: 3px solid #263238;
     background: rgba(253, 216, 53, 0.8);
@@ -509,6 +527,7 @@ ul.bioDetails, ul.formDetails {
 
   .bio img {
     width: 200px;
+    height: 200px;
   }
 
   .jumbotronContact {
