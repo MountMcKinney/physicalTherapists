@@ -474,6 +474,10 @@ ul.bioDetails, ul.formDetails {
   	text-decoration: none;
   }
 
+  a.mobileMenuToggle:hover {
+    color: rgba(253, 216, 53, 0.8);
+  }
+
   /*.mobileMenu ul li a i {
   	position: absolute;
   	top: 15px;
